@@ -1,0 +1,47 @@
+object FormAbout: TFormAbout
+  Left = 2774
+  Height = 110
+  Top = 530
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'About SteadyBlink'
+  ClientHeight = 110
+  ClientWidth = 320
+  FormStyle = fsStayOnTop
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Cursor = crHandPoint
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 203
+    Caption = 'Github: https://github.com/JohnGurin'
+    Font.Color = clMenuHighlight
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Cursor = crHandPoint
+    Left = 16
+    Height = 15
+    Top = 88
+    Width = 263
+    Caption = 'LinkedIn: https://www.linkedin.com/in/evgeniyg/'
+    Font.Color = clMenuHighlight
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 30
+    Top = 13
+    Width = 73
+    Caption = 'Version 0.1.0'#13#10'By John Gurin'
+    ParentColor = False
+  end
+end
