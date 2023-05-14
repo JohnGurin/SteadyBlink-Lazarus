@@ -1,11 +1,11 @@
 object FormAbout: TFormAbout
   Left = 614
-  Height = 110
+  Height = 115
   Top = 402
   Width = 320
   BorderStyle = bsDialog
   Caption = 'About SteadyBlink'
-  ClientHeight = 110
+  ClientHeight = 115
   ClientWidth = 320
   FormStyle = fsStayOnTop
   Position = poScreenCenter
