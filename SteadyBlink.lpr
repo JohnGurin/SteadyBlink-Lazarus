@@ -5,12 +5,11 @@ program SteadyBlink;
 uses
  {$IFDEF UNIX}
   cthreads,
-      {$ENDIF} {$IFDEF HASAMIGA}
+          {$ENDIF} {$IFDEF HASAMIGA}
   athreads,
-      {$ENDIF}
+          {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms,
-
   BlinkerUnit,
   Windows,
   AboutUnit { you can add units after this };
@@ -21,7 +20,7 @@ var
   Ex: integer;
 begin
   RequireDerivedFormResource := True;
-  Application.Scaled:=True;
+  Application.Scaled := True;
   Application.Initialize;
   AppName := PChar(Application.Title);
 
@@ -36,3 +35,9 @@ begin
   Application.CreateForm(TFormAbout, FormAbout);
   Application.Run;
 end.
+(*
+1. User profile settings (timings, language, eye image size)
+2. Eye blink animation
+3. Multiple screens support
+4. Add to startup from the manu
+*)
