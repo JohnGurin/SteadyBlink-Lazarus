@@ -59,7 +59,7 @@ implementation
 const
   EYE_SIZE: integer = 96;
   UPSCALE_K: integer = 5;
-  RESOURCE_DEFAULT_SVG = 'EYE3';
+  RESOURCE_DEFAULT_SVG = 'EYE1';
 
   EYE_SHOW_MS = 1500;
   EYE_HIDE_MS = 3500;

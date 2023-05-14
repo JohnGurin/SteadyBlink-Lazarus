@@ -15,10 +15,9 @@
         <TextDesc Value="Periodically shows the eye image on a screen."/>
       </XPManifest>
       <Icon Value="0"/>
-      <Resources Count="3">
-        <Resource_0 FileName="eye-svgrepo-com-2.svg" Type="RCDATA" ResourceName="EYE2"/>
-        <Resource_1 FileName="eye-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE1"/>
-        <Resource_2 FileName="visibility-view-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE3"/>
+      <Resources Count="2">
+        <Resource_0 FileName="assets\svg-used\eye-svgrepo-com-2.svg" Type="RCDATA" ResourceName="EYE2"/>
+        <Resource_1 FileName="assets\svg-used\visibility-view-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE1"/>
       </Resources>
     </General>
     <VersionInfo>
