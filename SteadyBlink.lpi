@@ -15,14 +15,16 @@
         <TextDesc Value="Periodically shows the eye image on a screen."/>
       </XPManifest>
       <Icon Value="0"/>
-      <Resources Count="1">
-        <Resource_0 FileName="eye-svgrepo-com.svg" Type="RCDATA" ResourceName="EYE1"/>
+      <Resources Count="3">
+        <Resource_0 FileName="eye-svgrepo-com-2.svg" Type="RCDATA" ResourceName="EYE2"/>
+        <Resource_1 FileName="eye-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE1"/>
+        <Resource_2 FileName="eye-svgrepo-com-3.svg" Type="RCDATA" ResourceName="EYE3"/>
       </Resources>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <MinorVersionNr Value="1"/>
-      <StringTable Comments="Periodically shows the eye image on a screen." CompanyName="JohnGurin" LegalCopyright="JohnGurin" ProductName="SteadyBlinker" ProductVersion="0.1.0"/>
+      <StringTable Comments="Periodically shows the eye image on a screen." CompanyName="JohnGurin" LegalCopyright="JohnGurin" ProductName="SteadyBlink" ProductVersion="0.1.0"/>
     </VersionInfo>
     <BuildModes>
       <Item Name="Default" Default="True"/>

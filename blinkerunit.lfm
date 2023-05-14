@@ -3,6 +3,7 @@ object FormBlinker: TFormBlinker
   Height = 128
   Top = 457
   Width = 128
+  AlphaBlendValue = 200
   BorderStyle = bsNone
   Caption = 'SteadyBlink'
   FormStyle = fsSystemStayOnTop

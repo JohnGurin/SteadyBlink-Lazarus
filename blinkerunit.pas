@@ -59,7 +59,7 @@ implementation
 const
   EYE_SIZE: integer = 96;
   UPSCALE_K: integer = 5;
-  RESOURCE_DEFAULT_SVG = 'EYE1';
+  RESOURCE_DEFAULT_SVG = 'EYE3';
 
   EYE_SHOW_MS = 1500;
   EYE_HIDE_MS = 3500;
@@ -79,18 +79,27 @@ begin
   Width := EYE_SIZE;
   Height := EYE_SIZE;
 
-  SVGData := TResourceStream.Create(HInstance, RESOURCE_DEFAULT_SVG, RT_RCDATA);
-  SVG := TBGRASVG.Create(SVGData);
-  PNG := TBGRABitmap.Create;
-  PNG.SetSize(EYE_SIZE * UPSCALE_K, EYE_SIZE * UPSCALE_K);
+
   try
+    SVGData := TResourceStream.Create(HInstance, RESOURCE_DEFAULT_SVG, RT_RCDATA);
+    SVG := TBGRASVG.Create(SVGData);
+    PNG := TBGRABitmap.Create;
+    PNG.SetSize(EYE_SIZE * UPSCALE_K, EYE_SIZE * UPSCALE_K);
 
     SVG.StretchDraw(PNG.Canvas2D, taCenter, tlCenter,
       0, 0, PNG.Width, PNG.Height);
     BGRAReplace(PNG, PNG.Resample(EYE_SIZE, EYE_SIZE, rmFineResample));
 
-    EYE_ACTIVE := PNG.Duplicate(True);
-    EYE_PAUSED := PNG.FilterGrayscale;
+    SVGData := TResourceStream.Create(HInstance, 'EYE2', RT_RCDATA);
+    SVG := TBGRASVG.Create(SVGData);
+    EYE_ACTIVE := TBGRABitmap.Create;
+    EYE_ACTIVE.SetSize(EYE_SIZE * UPSCALE_K, EYE_SIZE * UPSCALE_K);
+    SVG.StretchDraw(EYE_ACTIVE.Canvas2D, taCenter, tlCenter,
+      0, 0, EYE_ACTIVE.Width, EYE_ACTIVE.Height);
+    BGRAReplace(EYE_ACTIVE, EYE_ACTIVE.Resample(EYE_SIZE, EYE_SIZE, rmFineResample));
+
+    //EYE_ACTIVE := PNG.Duplicate(True);
+    EYE_PAUSED := EYE_ACTIVE.FilterGrayscale;
 
 
     dwStyle := GetWindowLongA(Self.Handle, GWL_EXSTYLE);
