@@ -1,7 +1,7 @@
 object FormAbout: TFormAbout
-  Left = 2774
+  Left = 614
   Height = 110
-  Top = 530
+  Top = 402
   Width = 320
   BorderStyle = bsDialog
   Caption = 'About SteadyBlink'

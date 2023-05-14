@@ -5,11 +5,12 @@ program SteadyBlink;
 uses
  {$IFDEF UNIX}
   cthreads,
-     {$ENDIF} {$IFDEF HASAMIGA}
+      {$ENDIF} {$IFDEF HASAMIGA}
   athreads,
-     {$ENDIF}
+      {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, runtimetypeinfocontrols,
+  Forms,
+
   BlinkerUnit,
   Windows,
   AboutUnit { you can add units after this };
@@ -20,7 +21,6 @@ var
   Ex: integer;
 begin
   RequireDerivedFormResource := True;
-  Application.Title:='SteadyBlink';
   Application.Scaled:=True;
   Application.Initialize;
   AppName := PChar(Application.Title);

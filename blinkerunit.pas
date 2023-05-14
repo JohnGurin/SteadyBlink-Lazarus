@@ -1,7 +1,7 @@
 unit BlinkerUnit;
 
  {$mode objfpc}{$H+}
-//{$mode delphi}
+
 interface
 
 uses

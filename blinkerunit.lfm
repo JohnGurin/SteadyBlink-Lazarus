@@ -1,7 +1,7 @@
 object FormBlinker: TFormBlinker
-  Left = 2812
+  Left = 652
   Height = 128
-  Top = 585
+  Top = 457
   Width = 128
   BorderStyle = bsNone
   Caption = 'SteadyBlink'
@@ -458,7 +458,8 @@ object FormBlinker: TFormBlinker
   end
   object BlinkerTrayIcon: TTrayIcon
     BalloonFlags = bfWarning
-    BalloonHint = 'SteadyBlink paused'
+    BalloonHint = 'paused'
+    BalloonTitle = 'SteadyBlink'
     Visible = True
     OnClick = BlinkerTrayIconClick
     OnMouseUp = BlinkerTrayIconMouseUp
