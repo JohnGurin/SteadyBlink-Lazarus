@@ -5,10 +5,10 @@ program SteadyBlink;
 uses
  {$IFDEF UNIX}
   cthreads,
-          {$ENDIF} {$IFDEF HASAMIGA}
+ {$ENDIF} {$IFDEF HASAMIGA}
   athreads,
-          {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
+ {$ENDIF}
+  Interfaces,
   Forms,
   BlinkerUnit,
   Windows,
@@ -44,3 +44,4 @@ TODO
 5. Single Instance
 6. Period jitter
 *)
+
