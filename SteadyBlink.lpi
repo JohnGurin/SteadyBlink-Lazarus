@@ -18,7 +18,7 @@
       <Resources Count="3">
         <Resource_0 FileName="eye-svgrepo-com-2.svg" Type="RCDATA" ResourceName="EYE2"/>
         <Resource_1 FileName="eye-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE1"/>
-        <Resource_2 FileName="eye-svgrepo-com-3.svg" Type="RCDATA" ResourceName="EYE3"/>
+        <Resource_2 FileName="visibility-view-svgrepo-com-1.svg" Type="RCDATA" ResourceName="EYE3"/>
       </Resources>
     </General>
     <VersionInfo>
