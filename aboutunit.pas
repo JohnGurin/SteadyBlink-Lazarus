@@ -5,7 +5,7 @@ unit AboutUnit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, lclintf;
+  Classes, Forms, Controls, Graphics, StdCtrls, lclintf;
 
 type
 

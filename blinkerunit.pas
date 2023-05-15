@@ -5,8 +5,8 @@ unit BlinkerUnit;
 interface
 
 uses
-  Windows, Classes, SysUtils, Forms, Controls, Graphics, ExtCtrls, Menus,
-  BGRABitmap, BGRASVG, BGRABitmapTypes, AboutUnit, Dialogs;
+  Windows, Classes, Forms, Controls, Graphics, ExtCtrls, Menus,
+  BGRABitmap, BGRASVG, BGRABitmapTypes, AboutUnit;
 
 type
 
