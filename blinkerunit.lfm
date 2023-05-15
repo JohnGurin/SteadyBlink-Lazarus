@@ -17,9 +17,10 @@ object FormBlinker: TFormBlinker
     Left = 8
   end
   object BlinkerTrayIcon: TTrayIcon
-    BalloonFlags = bfWarning
+    BalloonFlags = bfInfo
     BalloonHint = 'paused'
     BalloonTitle = 'SteadyBlink'
+    Hint = 'SteadyBlink'
     Visible = True
     OnClick = BlinkerTrayIconClick
     OnMouseUp = BlinkerTrayIconMouseUp
