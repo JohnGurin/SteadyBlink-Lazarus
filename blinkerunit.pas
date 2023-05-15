@@ -191,7 +191,7 @@ end;
 
 procedure TFormBlinker.MenuItemAboutClick(Sender: TObject);
 begin
-  FormAbout.Show;
+  FormAbout.ShowModal;
 end;
 
 procedure TFormBlinker.MenuItemExitClick(Sender: TObject);
