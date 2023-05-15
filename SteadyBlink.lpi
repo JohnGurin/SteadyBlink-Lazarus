@@ -23,7 +23,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <MinorVersionNr Value="1"/>
-      <StringTable Comments="Periodically shows the eye image on a screen." CompanyName="JohnGurin" LegalCopyright="JohnGurin" ProductName="SteadyBlink" ProductVersion="0.1.0"/>
+      <StringTable Comments="Periodically shows an eye image on the screen." CompanyName="Evgeny Gurin" LegalCopyright="Evgeny Gurin" ProductName="SteadyBlink" ProductVersion="0.1.0"/>
     </VersionInfo>
     <BuildModes>
       <Item Name="Default" Default="True"/>
