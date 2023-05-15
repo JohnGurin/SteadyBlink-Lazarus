@@ -12,6 +12,7 @@ object FormBlinker: TFormBlinker
   Position = poScreenCenter
   LCLVersion = '2.2.6.0'
   object BlinkerTimer: TTimer
+    Interval = 1
     OnTimer = BlinkerTimerTimer
     Left = 8
   end

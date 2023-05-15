@@ -40,7 +40,7 @@ type
   end;
 
 type
-  EyeMode = (EyeShowing, EyeHidden, EyePaused);
+  EyeMode = (EyeInit, EyeShowing, EyeHidden, EyePaused);
 
 var
   FormBlinker: TFormBlinker;
@@ -73,7 +73,8 @@ var
   SVG: TBGRASVG;
   PNG: TBGRABitmap;
 begin
-  mode := EyeShowing;
+
+  mode := EyeInit;
   FormStyle := fsSystemStayOnTop;
   Borderstyle := bsNone;
   Width := EYE_SIZE;
@@ -142,6 +143,16 @@ var
 begin
 
   case mode of
+    EyeInit:
+    begin
+      SetWindowLong(
+        GetParent(Handle),
+        GWL_EXSTYLE,
+        WS_EX_TOOLWINDOW and not WS_EX_APPWINDOW
+        );
+      BlinkerTimer.Interval := EYE_SHOW_MS;
+      mode := EyeShowing;
+    end;
     EyeShowing:
     begin
       flag := SWP_NOACTIVATE or SWP_HIDEWINDOW;
