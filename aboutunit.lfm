@@ -40,7 +40,7 @@ object FormAbout: TFormAbout
     Left = 16
     Height = 30
     Top = 13
-    Width = 73
+    Width = 86
     Caption = 'Version 0.1.0'#13#10'By Evgeny Gurin'
     ParentColor = False
   end
