@@ -1,7 +1,7 @@
 # SteadyBlink-Lazarus
 Periodically (every 5 seconds) shows an eye image in the middle of the screen as a reminder to blink.
 
-OS: Windows XP - Windows 11, 32/64
+Download link: [SteadyBlink-win_x32_x64.exe](https://github.com/JohnGurin/SteadyBlink-Lazarus/releases/download/v0.1/SteadyBlink.exe)
 
 ![SteadyBlink](SteadyBlink.gif)
 
