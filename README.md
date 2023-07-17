@@ -3,6 +3,8 @@ Periodically (every 5 seconds) shows an eye image in the middle of the screen as
 
 OS: Windows XP - Windows 11, 32/64
 
+![SteadyBlink](SteadyBlink.gif)
+
 ## VirusTotal report
 Due to the nature of the application, I expected the binary would trigger VirustTotal to give false positives. I don't have incentives to resolve this nuisance for now.
 
